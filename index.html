@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sharing Is Caring</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+        <div id="table">
+
+            <table id="gameTable" class="styled-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Game</th>
+                        <th>Price</th>
+                        <th>Persons</th>
+                        <th>Price Per Person</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <span id="name">Cyberpunk</span>
+                        </td>
+
+                        <td>
+                            <span id="price">20</span>
+                            <span>€</span>
+                        </td>
+
+                        <td>
+                            <button id="delPerson" onclick="delPerson()">-</button>
+                            <span id="personCount">1</span>
+                            <button id="addPerson" onclick="addPerson()">+</button>
+                        </td>
+
+                        <td>
+                            <span id="pricePerPerson"></span>
+                            <span>€</span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div id="addGame">
+            <label for="game">Game:</label>
+            <input id="newGame" name="game" type="text">
+            <label for="game">Price:</label>
+            <input id="newPrice" name="price" type="text">
+            <input class="button" onclick="addRow()" type="submit" value="Add Game">
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
